@@ -8,11 +8,17 @@ Time spent: **X** hours spent in total
 
 1. (Required) Vulnerability Name or ID
   - [ ] Summary:
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version:
+    - Vulnerability types: Cross-Site Scripting
+    - Tested in version: 4.2.0
+    - Fixed in version: 4.2.1
   - [ ] GIF Walkthrough:
+      <img src='ex1gif.gif' title='' width='' alt='' />
   - [ ] Steps to recreate:
+       - Save image named xyz<img src=a onerror=alert(document.cookie)>.jpg
+       - log in to admin
+       - upload image
+       - open image location
+
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Required) Vulnerability Name or ID
