@@ -27,12 +27,12 @@ Time spent: **X** hours spent in total
     - Tested in version: 4.2.0
     - Fixed in version: 4.2.3
   - [ ] GIF Walkthrough:
-  <img src='ex2.gif' title='' width='' alt='' />
+      <img src='ex2.gif' title='' width='' alt='' />
   - [ ] Steps to recreate:
-      - inspect element
-      - edit as html
-      - paste code `<a href="</a><a title=" onmouseover=alert('test')  ">link</a>`
-      - hover over link
+        - inspect element
+        - edit as html
+        - paste code "<a href="</a><a title=" onmouseover=alert('test')  ">link</a>"
+        - hover over link
   - [ ] Affected source code:
     - [Link 1](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5622)
 3. (Required) Vulnerability Name or ID
