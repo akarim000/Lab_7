@@ -6,7 +6,7 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-1. (Required) Vulnerability Name or ID
+1. Authenticated Stored Cross-Site Scripting via Image Filename
   - [ ] Summary:
     - Vulnerability types: Cross-Site Scripting
     - Tested in version: 4.2.0
@@ -20,17 +20,22 @@ Time spent: **X** hours spent in total
        - open image location
 
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+    - [Link 1](https://github.com/WordPress/WordPress/commit/c9e60dab176635d4bfaaf431c0ea891e4726d6e0)
+2. Authenticated Stored Cross-Site Scripting (XSS)
   - [ ] Summary:
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version:
+    - Vulnerability types: Cross Site Scripting
+    - Tested in version: 4.2.0
+    - Fixed in version: 4.2.3
   - [ ] GIF Walkthrough:
+  <img src='ex2.gif' title='' width='' alt='' />
   - [ ] Steps to recreate:
+      - inspect element
+      - edit as html
+      - paste code `<a href="</a><a title=" onmouseover=alert('test')  ">link</a>`
+      - hover over link
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
+    - [Link 1](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-5622)
+3. (Required) Vulnerability Name or ID
   - [ ] Summary:
     - Vulnerability types:
     - Tested in version:
